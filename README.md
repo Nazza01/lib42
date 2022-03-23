@@ -19,5 +19,8 @@ gcc -o <programname>.o <filename>.c lib42.a
 ```
 or
 ```
-gcc -o <programname>.o <filename>.c -l42.a
+gcc -o <programname>.o <filename>.c -L . -l 42
 ```
+
+Check here for an example makefile for easy inclusion of libraries:
+[Example](https://github.com/Nazza01/lib42/blob/main/Example%20Makefiles/Makefile)
