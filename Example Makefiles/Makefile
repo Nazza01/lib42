@@ -1,16 +1,7 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: Nathanael <nervin@student.42adel.org.au    +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/01/25 23:45:33 by Nathanael         #+#    #+#              #
-#    Updated: 2022/03/23 22:44:26 by Nathanael        ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
+#	A Tutorial for using libraries inside your projects
 
-NAME 	=	lib42.a
+
+NAME 	=	use_lib
 
 #####################################################
 #					DIRECTORIES						#
@@ -21,24 +12,44 @@ LIBDIR	=	./libraries
 OBJDIR	=	./objects
 SRCDIR	=	./sources
 
-TEMPDIR	=	$(BLDDIR) $(OBJDIR)
+TEMPDIR =	$(OBJDIR) $(BLDDIR)
 
 #####################################################
 #					FILES							#
 #####################################################
 SOURCES	:=	$(shell find $(SRCDIR) -name '*.c')
+
+#	Dont forget to include the libraries' header file too!
+#	e.g:
+# 		./headers/
+#			lib42.h
+# 			...
+# 			current_project.h
+
 HEADERS	:=	$(shell find $(HDRDIR) -name '*.h')
 OBJECTS	:=	$(SOURCES:$(SRCDIR)/%.c=$(OBJDIR)/%.o)
+RM		=	rm -rf
+MKDIR	=	mkdir -p
+
+#The library is called "lib42.a"
+#	This library needs be included on the command line in the format like so:
+# 		Tell the linker where the library is located
+#			-L ./libraries/
+# 		Tell the linker what the library is called - strip the lib part away like so:
+#			-l 42		<--- lib42.a becomes 42
+INC_LIB	=	-L $(LIBDIR)
+LFT		=	-l 42
 
 #####################################################
 #					COMPILER/FLAGS					#
 #####################################################
 CC		=	gcc
-CFLAGS	=	-Wall -Wextra -Werror -std=c99 -I $(HDRDIR)
+CFLAGS	=	-Wall -Wextra -Werror -std=c99 -g -I $(HDRDIR)
 
-RM		=	rm -rf
-MKDIR	=	mkdir -p
-MAKELIB	=	ar -rcs
+#The linker needs to know where the library is stored and how to use it
+#	We include the above variables (making it easier for other libraries to be imported)
+#	The full line below now should be:	-L ./libraries -l 42
+LFLAGS	=	-Wall -Wextra -Werror -I $(HDRDIR) $(INC_LIB) $(LFT)
 
 #####################################################
 #					COMMANDS						#
@@ -51,9 +62,9 @@ dirs:
 	@printf "Made directories: %s\n" $(TEMPDIR)
 
 $(BLDDIR)/$(NAME): $(OBJECTS)
-	@$(MAKELIB) $@ $^
+	@$(CC) $(OBJECTS) $(LFLAGS) -o $@
 	@clear
-	@printf "Library %s built successfully\n" $@
+	@printf "Compiled %s successfully\n" $@
 
 $(OBJECTS): $(OBJDIR)/%.o : $(SRCDIR)/%.c
 	@$(CC) $(CFLAGS) -c $< -o $@
@@ -65,11 +76,11 @@ clean:
 	@clear
 	@printf "Cleaned: %s\n" $(BLDDIR)
 
-fclean:
+fclean: clean
 	@$(RM) $(OBJDIR)
 	@clear
 	@printf "Cleaned: %s\n" $(OBJDIR)
 
-re: clean all
+re: fclean all
 	@clear
 	@printf "Cleaned and remade all files!\n"
