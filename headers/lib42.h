@@ -19,6 +19,7 @@
 # include	<limits.h>
 # include	<fcntl.h>
 # include	<stdarg.h>
+# include	<stdio.h>
 
 /****************************************/
 /*				LIBFT					*/

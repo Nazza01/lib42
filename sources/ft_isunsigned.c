@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "lib42.h"
-#include <stdio.h>
 
 /*
 NAME
@@ -33,7 +32,6 @@ size_t	pf_strlen(const char *str)
 		i++;
 	return (i);
 }
-
 
 /*
 ft_nlen
