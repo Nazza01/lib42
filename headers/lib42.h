@@ -6,7 +6,7 @@
 /*   By: Nathanael <nervin@student.42adel.org.au    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/23 21:34:17 by Nathanael         #+#    #+#             */
-/*   Updated: 2022/03/23 21:46:48 by Nathanael        ###   ########.fr       */
+/*   Updated: 2022/03/26 17:35:46 by Nathanael        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,6 @@
 /****************************************/
 /*				LIBFT					*/
 /****************************************/
-# ifndef LIBFT_H
-#  define LIBFT_H
-
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);
 int		ft_isascii(int c);
@@ -76,17 +73,12 @@ void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 
-# endif
-
 /****************************************/
 /*			GET_NEXT_LINE				*/
 /****************************************/
-# ifndef GET_NEXT_LINE_H
-#  define GET_NEXT_LINE_H
-
-#  ifndef BUFFER_SIZE
-#   define BUFFER_SIZE 5
-#  endif
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 255
+# endif
 
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strchr(const char *s, int i);
@@ -97,14 +89,9 @@ char	*gnl_extract(char *line);
 char	*get_next_line(int fd);
 size_t	ft_strlen(const char *str);
 
-# endif
-
 /****************************************/
 /*				FT_PRINTF				*/
 /****************************************/
-# ifndef FT_PRINTF_H
-#  define FT_PRINTF_H
-
 typedef struct s_printf
 {
 	va_list	args;
@@ -121,7 +108,5 @@ void	ft_isstring(t_print *argcount);
 void	ft_isunsigned(t_print *argcount);
 char	*ft_numlen(unsigned long num, int *len);
 int		ft_printf(const char *formatting, ...);
-
-# endif
 
 #endif
