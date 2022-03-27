@@ -6,7 +6,7 @@
 /*   By: Nathanael <nervin@student.42adel.org.au    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/23 21:34:17 by Nathanael         #+#    #+#             */
-/*   Updated: 2022/03/26 17:35:46 by Nathanael        ###   ########.fr       */
+/*   Updated: 2022/03/27 14:05:23 by Nathanael        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,6 +72,11 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *));
 void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+
+/****************************************/
+/*			PERSONAL_ADDED				*/
+/****************************************/
+void	ft_error(char *message);
 
 /****************************************/
 /*			GET_NEXT_LINE				*/

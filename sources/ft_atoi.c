@@ -6,7 +6,7 @@
 /*   By: Nathanael <nervin@student.42adel.org.au    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/08 09:36:32 by nervin            #+#    #+#             */
-/*   Updated: 2022/03/23 21:51:55 by Nathanael        ###   ########.fr       */
+/*   Updated: 2022/03/27 13:58:54 by Nathanael        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@ DESCRIPTION
 	Converts the initial portion of the string pointed to by str to int. ft_atoi
 	does not detect for errors.
 */
-
 int	ft_atoi(const char *str)
 {
 	int	i;
