@@ -6,11 +6,7 @@
 /*   By: Nathanael <nervin@student.42adel.org.au    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/23 21:34:17 by Nathanael         #+#    #+#             */
-<<<<<<< HEAD
-/*   Updated: 2022/03/27 14:05:23 by Nathanael        ###   ########.fr       */
-=======
-/*   Updated: 2022/04/02 11:52:26 by Nathanael        ###   ########.fr       */
->>>>>>> 95b08fb (Adding changes for lib42)
+/*   Updated: 2022/04/02 12:22:10 by Nathanael        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +20,12 @@
 # include	<fcntl.h>
 # include	<stdarg.h>
 # include	<stdio.h>
+# include	<stdbool.h>
+
+/****************************************/
+/*			PERSONAL_ADDED				*/
+/****************************************/
+void	ft_error(char *message);
 
 /****************************************/
 /*				LIBFT					*/
@@ -78,21 +80,13 @@ void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 
 /****************************************/
-/*			PERSONAL_ADDED				*/
-/****************************************/
-void	ft_error(char *message);
-
-/****************************************/
 /*			GET_NEXT_LINE				*/
 /****************************************/
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 255
 # endif
 
-char	*gnl_getline(int fd, char *buffer, char *back);
-char	*gnl_extract(char *line);
 char	*get_next_line(int fd);
-size_t	ft_strlen(const char *str);
 
 /****************************************/
 /*				FT_PRINTF				*/
@@ -103,6 +97,7 @@ typedef struct s_printf
 	int		total;
 }	t_print;
 
+char	*ft_numlen(unsigned long num, int *len);
 void	ft_check(const char c, t_print *argcount);
 void	ft_ischaracter(t_print *argcount);
 void	ft_ishex(t_print *argcount, char c);
