@@ -6,7 +6,11 @@
 /*   By: Nathanael <nervin@student.42adel.org.au    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/23 21:34:17 by Nathanael         #+#    #+#             */
+<<<<<<< HEAD
 /*   Updated: 2022/03/27 14:05:23 by Nathanael        ###   ########.fr       */
+=======
+/*   Updated: 2022/04/02 11:52:26 by Nathanael        ###   ########.fr       */
+>>>>>>> 95b08fb (Adding changes for lib42)
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,10 +89,6 @@ void	ft_error(char *message);
 #  define BUFFER_SIZE 255
 # endif
 
-char	*ft_substr(char const *s, unsigned int start, size_t len);
-char	*ft_strchr(const char *s, int i);
-char	*ft_strdup(const char *s);
-char	*ft_strjoin(char const *s1, char const *s2);
 char	*gnl_getline(int fd, char *buffer, char *back);
 char	*gnl_extract(char *line);
 char	*get_next_line(int fd);
@@ -111,7 +111,7 @@ void	ft_isperc(t_print *argcount);
 void	ft_ispointer(t_print *argcount);
 void	ft_isstring(t_print *argcount);
 void	ft_isunsigned(t_print *argcount);
-char	*ft_numlen(unsigned long num, int *len);
+
 int		ft_printf(const char *formatting, ...);
 
 #endif

@@ -1,0 +1,1261 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+ 
+
+# Make data base, printed on Sat Apr  2 11:50:39 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# makefile (from `Makefile', line 19)
+HDRDIR = ./headers
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /Users/nathanael/Github/42-School/lib42
+# makefile
+SHELL = /bin/sh
+# makefile (from `Makefile', line 39)
+RM = rm -rf
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupport":true}
+# environment
+_ = /usr/bin/make
+# makefile (from `Makefile', line 37)
+CFLAGS = -Wall -Wextra -Werror -std=c99 -I $(HDRDIR)
+# makefile (from `Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# makefile (from `Makefile', line 29)
+SOURCES := ./sources/ft_strnstr.c ./sources/ft_ishex.c ./sources/ft_isdigit.c ./sources/ft_lstadd_back.c ./sources/ft_putstr_fd.c ./sources/ft_lstnew.c ./sources/get_next_line_utils.c ./sources/ft_strlcpy.c ./sources/ft_strlen.c ./sources/ft_isstring.c ./sources/ft_lstlast.c ./sources/ft_memcmp.c ./sources/ft_ispointer.c ./sources/ft_isperc.c ./sources/ft_putnbr_fd.c ./sources/ft_lstclear.c ./sources/ft_lstiter.c ./sources/ft_strchr.c ./sources/ft_printf.c ./sources/ft_striteri.c ./sources/ft_bzero.c ./sources/ft_strjoin.c ./sources/ft_isascii.c ./sources/ft_memcpy.c ./sources/get_next_line.c ./sources/ft_isprint.c ./sources/ft_putendl_fd.c ./sources/ft_lstmap.c ./sources/ft_lstsize.c ./sources/ft_toupper.c ./sources/ft_split.c ./sources/ft_lstadd_front.c ./sources/ft_strrchr.c ./sources/ft_isalpha.c ./sources/ft_memchr.c ./sources/ft_putchar_fd.c ./sources/ft_memset.c ./sources/ft_substr.c ./sources/ft_strncmp.c ./sources/ft_strmapi.c ./sources/ft_strtrim.c ./sources/ft_ischaracter.c ./sources/ft_memmove.c ./sources/ft_strlcat.c ./sources/ft_calloc.c ./sources/ft_check.c ./sources/ft_numlen.c ./sources/ft_strdup.c ./sources/ft_isint.c ./sources/ft_atoi.c ./sources/ft_isunsigned.c ./sources/ft_isalnum.c ./sources/ft_lstdelone.c ./sources/ft_itoa.c ./sources/ft_tolower.c
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+__CFBundleIdentifier = com.microsoft.VSCode
+# environment
+P9K_SSH = 0
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/jp/p0rfvnj11tldxjm92zpbbsv80000gn/T/vscode-ipc-767f8b6a-227b-4ee7-a5a5-8eac91b5f813.sock
+# environment
+VSCODE_CWD = /
+# environment
+PATH = /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands
+ 
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# makefile (from `Makefile', line 24)
+TEMPDIR = $(BLDDIR) $(OBJDIR)
+# environment
+LaunchInstanceID = 2A709BD0-4F7D-41B4-9A9F-CBC52083FA86
+# environment
+VSCODE_LOG_STACK = false
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.hoIm8AB7yb/Listeners
+# makefile (from `Makefile', line 22)
+SRCDIR = ./sources
+# automatic
+%F = $(notdir $%)
+# environment
+DISPLAY = /private/tmp/com.apple.launchd.v1kSEO4Yiy/org.xquartz:0
+# makefile (from `Makefile', line 18)
+BLDDIR = ./build
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+PWD = /Users/nathanael/Github/42-School/lib42
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /Users/nathanael
+# default
+MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/nathanael/Library/Application Support/Code/CachedData/e18005f0f1b33c29e81d732535d8c0e47cafb0b5
+# environment
+LOGNAME = nathanael
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# makefile (from `Makefile', line 30)
+HEADERS := ./headers/lib42.h
+# environment
+ZSH = /Users/nathanael/.oh-my-zsh
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# makefile (from `Makefile', line 40)
+MKDIR = mkdir -p
+# environment
+XPC_FLAGS = 0x0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 1
+# makefile (from `Makefile', line 36)
+CC = gcc
+# default
+MAKE_VERSION := 3.81
+# environment
+USER = nathanael
+# makefile
+.DEFAULT_GOAL := all
+# makefile (from `Makefile', line 13)
+NAME = lib42.a
+# environment
+LESS = -R
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
+# makefile (from `Makefile', line 20)
+LIBDIR = ./libraries
+# default
+.VARIABLES := 
+# environment
+TMPDIR = /var/folders/jp/p0rfvnj11tldxjm92zpbbsv80000gn/T/
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /Users/nathanael/Library/Application Support/Code/1.66.0-main.sock
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.50563405.50563411
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# environment
+__CF_USER_TEXT_ENCODING = 0x1F5:0:15
+# environment
+COMMAND_MODE = unix2003
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# makefile (from `Makefile', line 21)
+OBJDIR = ./objects
+# makefile (from `Makefile', line 41)
+MAKELIB = ar -rcs
+# environment
+PAGER = less
+# environment
+LC_ALL = C
+# environment
+SECURITYSESSIONID = 186a6
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# default
+.INCLUDE_DIRS = /usr/local/include
+# environment
+MAKELEVEL := 0
+ 
+# makefile (from `Makefile', line 31)
+OBJECTS := ./objects/ft_strnstr.o ./objects/ft_ishex.o ./objects/ft_isdigit.o ./objects/ft_lstadd_back.o ./objects/ft_putstr_fd.o ./objects/ft_lstnew.o ./objects/get_next_line_utils.o ./objects/ft_strlcpy.o ./objects/ft_strlen.o ./objects/ft_isstring.o ./objects/ft_lstlast.o ./objects/ft_memcmp.o ./objects/ft_ispointer.o ./objects/ft_isperc.o ./objects/ft_putnbr_fd.o ./objects/ft_lstclear.o ./objects/ft_lstiter.o ./objects/ft_strchr.o ./objects/ft_printf.o ./objects/ft_striteri.o ./objects/ft_bzero.o ./objects/ft_strjoin.o ./objects/ft_isascii.o ./objects/ft_memcpy.o ./objects/get_next_line.o ./objects/ft_isprint.o ./objects/ft_putendl_fd.o ./objects/ft_lstmap.o ./objects/ft_lstsize.o ./objects/ft_toupper.o ./objects/ft_split.o ./objects/ft_lstadd_front.o ./objects/ft_strrchr.o ./objects/ft_isalpha.o ./objects/ft_memchr.o ./objects/ft_putchar_fd.o ./objects/ft_memset.o ./objects/ft_substr.o ./objects/ft_strncmp.o ./objects/ft_strmapi.o ./objects/ft_strtrim.o ./objects/ft_ischaracter.o ./objects/ft_memmove.o ./objects/ft_strlcat.o ./objects/ft_calloc.o ./objects/ft_check.o ./objects/ft_numlen.o ./objects/ft_strdup.o ./objects/ft_isint.o ./objects/ft_atoi.o ./objects/ft_isunsigned.o ./objects/ft_isalnum.o ./objects/ft_lstdelone.o ./objects/ft_itoa.o ./objects/ft_tolower.o
+# environment
+LANG = C
+# environment
+VSCODE_PID = 396
+# variable set hash-table stats:
+# Load=85/1024=8%, Rehash=0, Collisions=6/135=4%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 16777220, inode 49855504): 12 files, no impossibilities.
+
+# 12 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+objects/ft_isdigit.o: sources/ft_isdigit.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_isdigit'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+objects/ft_lstlast.o: sources/ft_lstlast.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_lstlast'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+# Not a target:
+sources/ft_memcpy.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+objects/ft_memchr.o: sources/ft_memchr.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_memchr'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+# Not a target:
+sources/ft_itoa.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+sources/ft_memchr.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+sources/ft_memcmp.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+sources/ft_strlen.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+objects/ft_memset.o: sources/ft_memset.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_memset'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+# Not a target:
+sources/ft_isdigit.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+sources/ft_lstlast.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+objects/ft_tolower.o: sources/ft_tolower.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_tolower'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+ 
+
+all: dirs build/lib42.a
+#  Command-line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/9=0%
+
+objects/ft_strrchr.o: sources/ft_strrchr.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_strrchr'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+# Not a target:
+sources/ft_memset.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+objects/ft_strjoin.o: sources/ft_strjoin.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_strjoin'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+objects/ft_split.o: sources/ft_split.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_split'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+objects/ft_lstclear.o: sources/ft_lstclear.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_lstclear'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+objects/ft_printf.o: sources/ft_printf.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_printf'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+objects/ft_check.o: sources/ft_check.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_check'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+objects/ft_isint.o: sources/ft_isint.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_isint'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+# Not a target:
+sources/ft_strrchr.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+objects/ft_strlcat.o: sources/ft_strlcat.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_strlcat'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+# Not a target:
+sources/ft_strchr.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+sources/ft_strjoin.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+sources/ft_split.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+sources/ft_lstclear.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+sources/ft_printf.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+objects/ft_ishex.o: sources/ft_ishex.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_ishex'
+ 
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+objects/ft_bzero.o: sources/ft_bzero.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_bzero'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+objects/ft_isprint.o: sources/ft_isprint.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_isprint'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+# Not a target:
+sources/ft_check.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+sources/ft_isint.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+sources/ft_strlcat.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+sources/ft_ishex.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+sources/ft_bzero.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+objects/ft_lstmap.o: sources/ft_lstmap.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_lstmap'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+# Not a target:
+sources/ft_isprint.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-03-23 22:44:26
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+objects/ft_ispointer.o: sources/ft_ispointer.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_ispointer'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+objects/ft_lstnew.o: sources/ft_lstnew.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_lstnew'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+# Not a target:
+sources/ft_striteri.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+sources/ft_ispointer.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+sources/ft_lstnew.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+objects/ft_putnbr_fd.o: sources/ft_putnbr_fd.c
+#  Implicit rule search has not been done.
+ 
+#  Implicit/static pattern stem: `ft_putnbr_fd'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+objects/get_next_line_utils.o: sources/get_next_line_utils.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `get_next_line_utils'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+dirs:
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `'
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := dirs
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := 
+# automatic
+# | := 
+# automatic
+# < := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/17=6%
+#  commands to execute (from `Makefile', line 49):
+	@$(MKDIR) $(TEMPDIR)
+	@clear
+	@printf "Made directories: %s\n" $(TEMPDIR)
+	
+
+# Not a target:
+sources/ft_tolower.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+objects/ft_calloc.o: sources/ft_calloc.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_calloc'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+objects/ft_substr.o: sources/ft_substr.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_substr'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+objects/ft_numlen.o: sources/ft_numlen.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_numlen'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+objects/ft_atoi.o: sources/ft_atoi.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_atoi'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+# Not a target:
+sources/ft_putnbr_fd.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+sources/get_next_line_utils.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+fclean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 69):
+	@$(RM) $(OBJDIR)
+	@clear
+	@printf "Cleaned: %s\n" $(OBJDIR)
+	
+
+objects/ft_isalpha.o: sources/ft_isalpha.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_isalpha'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+objects/ft_lstsize.o: sources/ft_lstsize.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_lstsize'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+# Not a target:
+sources/ft_calloc.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+sources/ft_substr.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+sources/ft_numlen.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+objects/ft_isunsigned.o: sources/ft_isunsigned.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_isunsigned'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+# Not a target:
+ 
+sources/ft_isalpha.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+sources/ft_lstsize.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+objects/ft_strlcpy.o: sources/ft_strlcpy.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_strlcpy'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+objects/ft_striteri.o: sources/ft_striteri.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_striteri'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+build/lib42.a: objects/ft_strnstr.o objects/ft_ishex.o objects/ft_isdigit.o objects/ft_lstadd_back.o objects/ft_putstr_fd.o objects/ft_lstnew.o objects/get_next_line_utils.o objects/ft_strlcpy.o objects/ft_strlen.o objects/ft_isstring.o objects/ft_lstlast.o objects/ft_memcmp.o objects/ft_ispointer.o objects/ft_isperc.o objects/ft_putnbr_fd.o objects/ft_lstclear.o objects/ft_lstiter.o objects/ft_strchr.o objects/ft_printf.o objects/ft_striteri.o objects/ft_bzero.o objects/ft_strjoin.o objects/ft_isascii.o objects/ft_memcpy.o objects/get_next_line.o objects/ft_isprint.o objects/ft_putendl_fd.o objects/ft_lstmap.o objects/ft_lstsize.o objects/ft_toupper.o objects/ft_split.o objects/ft_lstadd_front.o objects/ft_strrchr.o objects/ft_isalpha.o objects/ft_memchr.o objects/ft_putchar_fd.o objects/ft_memset.o objects/ft_substr.o objects/ft_strncmp.o objects/ft_strmapi.o objects/ft_strtrim.o objects/ft_ischaracter.o objects/ft_memmove.o objects/ft_strlcat.o objects/ft_calloc.o objects/ft_check.o objects/ft_numlen.o objects/ft_strdup.o objects/ft_isint.o objects/ft_atoi.o objects/ft_isunsigned.o objects/ft_isalnum.o objects/ft_lstdelone.o objects/ft_itoa.o objects/ft_tolower.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 54):
+	@$(MAKELIB) $@ $^
+	@clear
+	@printf "Library %s built successfully\n" $@
+	
+
+objects/ft_strncmp.o: sources/ft_strncmp.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_strncmp'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+objects/ft_isalnum.o: sources/ft_isalnum.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_isalnum'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+# Not a target:
+sources/ft_strlcpy.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+objects/ft_lstadd_front.o: sources/ft_lstadd_front.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_lstadd_front'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+# Not a target:
+sources/ft_lstmap.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+objects/ft_strdup.o: sources/ft_strdup.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_strdup'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+objects/ft_lstdelone.o: sources/ft_lstdelone.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_lstdelone'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+# Not a target:
+sources/ft_strncmp.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+sources/ft_strdup.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+objects/ft_memmove.o: sources/ft_memmove.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_memmove'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+re: clean all
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 74):
+	@clear
+	@printf "Cleaned and remade all files!\n"
+	
+
+objects/ft_strchr.o: sources/ft_strchr.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_strchr'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+# Not a target:
+sources/ft_isalnum.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+sources/ft_isascii.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 64):
+	@$(RM) $(BLDDIR)
+	@clear
+	@printf "Cleaned: %s\n" $(BLDDIR)
+	
+
+# Not a target:
+sources/ft_lstadd_front.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+objects/ft_toupper.o: sources/ft_toupper.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_toupper'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+# Not a target:
+sources/ft_lstdelone.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ 
+# Not a target:
+sources/ft_memmove.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+objects/ft_ischaracter.o: sources/ft_ischaracter.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_ischaracter'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+objects/ft_strnstr.o: sources/ft_strnstr.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_strnstr'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+objects/ft_putstr_fd.o: sources/ft_putstr_fd.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_putstr_fd'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+# Not a target:
+sources/ft_toupper.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+objects/get_next_line.o: sources/get_next_line.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `get_next_line'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+# Not a target:
+sources/ft_ischaracter.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+sources/ft_strnstr.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+sources/ft_putstr_fd.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+objects/ft_putchar_fd.o: sources/ft_putchar_fd.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_putchar_fd'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+# Not a target:
+sources/get_next_line.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+objects/ft_isascii.o: sources/ft_isascii.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_isascii'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+# Not a target:
+sources/ft_putendl_fd.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+objects/ft_isperc.o: sources/ft_isperc.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_isperc'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+objects/ft_isstring.o: sources/ft_isstring.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_isstring'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+objects/ft_strtrim.o: sources/ft_strtrim.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_strtrim'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+# Not a target:
+sources/ft_isunsigned.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+sources/ft_putchar_fd.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+sources/ft_atoi.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+objects/ft_lstadd_back.o: sources/ft_lstadd_back.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_lstadd_back'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+# Not a target:
+sources/ft_isperc.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+sources/ft_isstring.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+sources/ft_strtrim.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+objects/ft_putendl_fd.o: sources/ft_putendl_fd.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_putendl_fd'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+objects/ft_strmapi.o: sources/ft_strmapi.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_strmapi'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+objects/ft_lstiter.o: sources/ft_lstiter.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_lstiter'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+# Not a target:
+sources/ft_lstadd_back.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+objects/ft_memcpy.o: sources/ft_memcpy.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_memcpy'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+objects/ft_itoa.o: sources/ft_itoa.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_itoa'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+# Not a target:
+sources/ft_strmapi.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+sources/ft_lstiter.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+objects/ft_memcmp.o: sources/ft_memcmp.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_memcmp'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+objects/ft_strlen.o: sources/ft_strlen.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_strlen'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+# files hash-table stats:
+# Load=119/1024=12%, Rehash=0, Collisions=24/247=10%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+ 
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+
+# Finished Make data base on Sat Apr  2 11:50:39 2022
+
+ 
