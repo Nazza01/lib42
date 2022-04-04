@@ -8,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This program built for i386-apple-darwin11.3.0
  
 
-# Make data base, printed on Sat Apr  2 12:35:13 2022
+# Make data base, printed on Mon Apr  4 16:09:43 2022
 
 # Variables
 
@@ -29,7 +29,6 @@ VSCODE_LOG_NATIVE = false
 # makefile
 CURDIR := /Users/nathanael/Github/42-School/lib42
 # makefile
- 
 SHELL = /bin/sh
 # makefile (from `Makefile', line 39)
 RM = rm -rf
@@ -50,17 +49,16 @@ __CFBundleIdentifier = com.microsoft.VSCode
 # environment
 P9K_SSH = 0
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/jp/p0rfvnj11tldxjm92zpbbsv80000gn/T/vscode-ipc-8254a0d0-f675-43d6-9e9a-7d7762a71269.sock
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/jp/p0rfvnj11tldxjm92zpbbsv80000gn/T/vscode-ipc-143165ed-11fc-487e-8fb1-03f8db37eaf0.sock
 # environment
 VSCODE_CWD = /
 # environment
+ 
 PATH = /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands
 # environment
 LSCOLORS = Gxfxcxdxbxegedabagacad
 # makefile (from `Makefile', line 24)
 TEMPDIR = $(BLDDIR) $(OBJDIR)
-# environment
-LaunchInstanceID = 2A709BD0-4F7D-41B4-9A9F-CBC52083FA86
 # environment
 VSCODE_LOG_STACK = false
 # environment
@@ -68,13 +66,13 @@ ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.hoIm8AB7yb/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.wiTHMmY9Y7/Listeners
 # makefile (from `Makefile', line 22)
 SRCDIR = ./sources
 # automatic
 %F = $(notdir $%)
 # environment
-DISPLAY = /private/tmp/com.apple.launchd.v1kSEO4Yiy/org.xquartz:0
+DISPLAY = /private/tmp/com.apple.launchd.5ZWgcL5fYA/org.xquartz:0
 # makefile (from `Makefile', line 18)
 BLDDIR = ./build
 # environment
@@ -142,7 +140,6 @@ VSCODE_IPC_HOOK = /Users/nathanael/Library/Application Support/Code/1.66.0-main.
 # makefile
 MAKEFLAGS = Rrqp
 # environment
- 
 MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
@@ -168,8 +165,6 @@ MAKELIB = ar -rcs
 PAGER = less
 # environment
 LC_ALL = C
-# environment
-SECURITYSESSIONID = 186a6
 # automatic
 ^F = $(notdir $^)
 # default
@@ -183,9 +178,9 @@ OBJECTS := ./objects/ft_strnstr.o ./objects/ft_ishex.o ./objects/ft_isdigit.o ./
 # environment
 LANG = C
 # environment
-VSCODE_PID = 396
+VSCODE_PID = 4217
 # variable set hash-table stats:
-# Load=85/1024=8%, Rehash=0, Collisions=6/135=4%
+# Load=83/1024=8%, Rehash=0, Collisions=6/133=5%
 
 # Pattern-specific Variable Values
 
@@ -193,9 +188,9 @@ VSCODE_PID = 396
 
 # Directories
 
-# . (device 16777220, inode 49855504): 12 files, no impossibilities.
+# . (device 16777220, inode 49855504): 10 files, no impossibilities.
 
-# 12 files, no impossibilities in 1 directories.
+# 10 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -253,7 +248,6 @@ sources/ft_memchr.c:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
- 
 
 # Not a target:
 sources/ft_memcmp.c:
@@ -327,6 +321,7 @@ sources/ft_memset.c:
 #  Modification time never checked.
 #  File has not been updated.
 
+ 
 objects/ft_strjoin.o: sources/ft_strjoin.c
 #  Implicit rule search has not been done.
 #  Implicit/static pattern stem: `ft_strjoin'
@@ -347,6 +342,7 @@ objects/ft_split.o: sources/ft_split.c
 	@$(CC) $(CFLAGS) -c $< -o $@
 	@clear
 	@printf "Linked %s to %s\n" $< $@
+ 
 	
 
 objects/ft_lstclear.o: sources/ft_lstclear.c
@@ -395,7 +391,6 @@ objects/ft_isint.o: sources/ft_isint.c
 
 # Not a target:
 sources/ft_strrchr.c:
- 
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -530,7 +525,7 @@ sources/ft_isprint.c:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-04-02 12:34:22
+#  Last modified 2022-04-02 12:40:51
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -573,7 +568,6 @@ sources/ft_ispointer.c:
 # Not a target:
 sources/ft_lstnew.c:
 #  Implicit rule search has not been done.
- 
 #  Modification time never checked.
 #  File has not been updated.
 
@@ -599,6 +593,7 @@ objects/get_next_line_utils.o: sources/get_next_line_utils.c
 	@printf "Linked %s to %s\n" $< $@
 	
 
+ 
 dirs:
 #  Implicit rule search has not been done.
 #  Implicit/static pattern stem: `'
@@ -763,7 +758,6 @@ sources/ft_isalpha.c:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
- 
 
 # Not a target:
 sources/ft_lstsize.c:
@@ -862,6 +856,7 @@ objects/ft_strdup.o: sources/ft_strdup.c
 #  commands to execute (from `Makefile', line 59):
 	@$(CC) $(CFLAGS) -c $< -o $@
 	@clear
+ 
 	@printf "Linked %s to %s\n" $< $@
 	
 
@@ -952,7 +947,6 @@ objects/ft_toupper.o: sources/ft_toupper.c
 #  Implicit/static pattern stem: `ft_toupper'
 #  Modification time never checked.
 #  File has not been updated.
- 
 #  commands to execute (from `Makefile', line 59):
 	@$(CC) $(CFLAGS) -c $< -o $@
 	@clear
@@ -965,6 +959,7 @@ sources/ft_lstdelone.c:
 #  Modification time never checked.
 #  File has not been updated.
 
+ 
 # Not a target:
 sources/ft_memmove.c:
 #  Implicit rule search has not been done.
@@ -1203,7 +1198,6 @@ sources/ft_lstadd_back.c:
 #  Modification time never checked.
 #  File has not been updated.
 
- 
 objects/ft_memcpy.o: sources/ft_memcpy.c
 #  Implicit rule search has not been done.
 #  Implicit/static pattern stem: `ft_memcpy'
@@ -1254,6 +1248,7 @@ objects/ft_strlen.o: sources/ft_strlen.c
 #  Implicit/static pattern stem: `ft_strlen'
 #  Modification time never checked.
 #  File has not been updated.
+ 
 #  commands to execute (from `Makefile', line 59):
 	@$(CC) $(CFLAGS) -c $< -o $@
 	@clear
@@ -1273,6 +1268,6 @@ objects/ft_strlen.o: sources/ft_strlen.c
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Sat Apr  2 12:35:13 2022
+# Finished Make data base on Mon Apr  4 16:09:43 2022
 
  
