@@ -6,7 +6,7 @@
 /*   By: Nathanael <nervin@student.42adel.org.au    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/23 21:34:17 by Nathanael         #+#    #+#             */
-/*   Updated: 2022/04/04 16:10:31 by Nathanael        ###   ########.fr       */
+/*   Updated: 2022/04/04 17:07:41 by Nathanael        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@
 void	ft_error(char *message);
 int		ft_get_pos_num_length(int number);
 int		ft_get_neg_num_len(int number);
+int		ft_isnull(void *data);
 
 /****************************************/
 /*				LIBFT					*/
