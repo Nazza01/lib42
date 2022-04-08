@@ -157,6 +157,7 @@ printf "Linked %s to %s\n" sources/ft_strdup.c objects/ft_strdup.o
 gcc -Wall -Wextra -Werror -std=c99 -I ./headers -c sources/ft_isint.c -o objects/ft_isint.o
 clear
 printf "Linked %s to %s\n" sources/ft_isint.c objects/ft_isint.o
+ 
 gcc -Wall -Wextra -Werror -std=c99 -I ./headers -c sources/ft_atoi.c -o objects/ft_atoi.o
 clear
 printf "Linked %s to %s\n" sources/ft_atoi.c objects/ft_atoi.o
@@ -175,7 +176,10 @@ printf "Linked %s to %s\n" sources/ft_itoa.c objects/ft_itoa.o
 gcc -Wall -Wextra -Werror -std=c99 -I ./headers -c sources/ft_tolower.c -o objects/ft_tolower.o
 clear
 printf "Linked %s to %s\n" sources/ft_tolower.c objects/ft_tolower.o
-ar -rcs build/lib42.a objects/ft_isnull.o objects/ft_strnstr.o objects/ft_ishex.o objects/ft_isdigit.o objects/ft_lstadd_back.o objects/ft_putstr_fd.o objects/ft_lstnew.o objects/get_next_line_utils.o objects/ft_strlcpy.o objects/ft_strlen.o objects/ft_isstring.o objects/ft_lstlast.o objects/ft_memcmp.o objects/ft_ispointer.o objects/ft_isperc.o objects/ft_putnbr_fd.o objects/ft_lstclear.o objects/ft_lstiter.o objects/ft_strchr.o objects/ft_printf.o objects/ft_striteri.o objects/ft_bzero.o objects/ft_strjoin.o objects/ft_isascii.o objects/ft_memcpy.o objects/get_next_line.o objects/ft_isprint.o objects/ft_error.o objects/ft_putendl_fd.o objects/ft_lstmap.o objects/ft_lstsize.o objects/ft_toupper.o objects/ft_split.o objects/ft_lstadd_front.o objects/ft_strrchr.o objects/ft_isalpha.o objects/ft_memchr.o objects/ft_putchar_fd.o objects/ft_memset.o objects/ft_substr.o objects/ft_strncmp.o objects/ft_strmapi.o objects/ft_strtrim.o objects/ft_ischaracter.o objects/ft_memmove.o objects/ft_strlcat.o objects/ft_calloc.o objects/ft_check.o objects/ft_numlen.o objects/ft_strdup.o objects/ft_isint.o objects/ft_atoi.o objects/ft_isunsigned.o objects/ft_isalnum.o objects/ft_lstdelone.o objects/ft_itoa.o objects/ft_tolower.o
+gcc -Wall -Wextra -Werror -std=c99 -I ./headers -c sources/ft_strcmp.c -o objects/ft_strcmp.o
+clear
+printf "Linked %s to %s\n" sources/ft_strcmp.c objects/ft_strcmp.o
+ar -rcs build/lib42.a objects/ft_isnull.o objects/ft_strnstr.o objects/ft_ishex.o objects/ft_isdigit.o objects/ft_lstadd_back.o objects/ft_putstr_fd.o objects/ft_lstnew.o objects/get_next_line_utils.o objects/ft_strlcpy.o objects/ft_strlen.o objects/ft_isstring.o objects/ft_lstlast.o objects/ft_memcmp.o objects/ft_ispointer.o objects/ft_isperc.o objects/ft_putnbr_fd.o objects/ft_lstclear.o objects/ft_lstiter.o objects/ft_strchr.o objects/ft_printf.o objects/ft_striteri.o objects/ft_bzero.o objects/ft_strjoin.o objects/ft_isascii.o objects/ft_memcpy.o objects/get_next_line.o objects/ft_isprint.o objects/ft_error.o objects/ft_putendl_fd.o objects/ft_lstmap.o objects/ft_lstsize.o objects/ft_toupper.o objects/ft_split.o objects/ft_lstadd_front.o objects/ft_strrchr.o objects/ft_isalpha.o objects/ft_memchr.o objects/ft_putchar_fd.o objects/ft_memset.o objects/ft_substr.o objects/ft_strncmp.o objects/ft_strmapi.o objects/ft_strtrim.o objects/ft_ischaracter.o objects/ft_memmove.o objects/ft_strlcat.o objects/ft_calloc.o objects/ft_check.o objects/ft_numlen.o objects/ft_strdup.o objects/ft_isint.o objects/ft_atoi.o objects/ft_isunsigned.o objects/ft_isalnum.o objects/ft_lstdelone.o objects/ft_itoa.o objects/ft_tolower.o objects/ft_strcmp.o
 clear
 printf "Library %s built successfully\n" build/lib42.a
 make: Leaving directory `/Users/nathanael/Github/42-School/lib42'

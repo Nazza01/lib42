@@ -6,22 +6,34 @@
 /*   By: Nathanael <nervin@student.42adel.org.au    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/08 12:29:13 by Nathanael         #+#    #+#             */
-/*   Updated: 2022/04/08 12:32:53 by Nathanael        ###   ########.fr       */
+/*   Updated: 2022/04/08 16:21:48 by Nathanael        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "lib42.h"
 
 /*
-Compares two strings str1 and str2, iterating through and returns the difference
-between str1 and str2 (ASCII comparison)
+Compares the contents of two strings and returns how far away the difference is
+between them (ASCII comparison).
 */
-int	ft_strcmp(const char *str1, const char *str2)
+int	ft_strcmp(char *first_str, char *second_str)
 {
-	while (*str1 && (*str1 == *str2))
+	int	index;
+
+	index = 0;
+	if (!first_str || !second_str)
+		return (EXIT_SUCCESS);
+	while (first_str[index] || second_str[index])
 	{
-		str1++;
-		str2++;
+		if (first_str[index] == second_str[index])
+			index++;
+		else
+		{
+			if (first_str[index] > second_str[index])
+				return (1);
+			else
+				return (-1);
+		}
 	}
-	return (*(const unsigned char *)str1 - *(const unsigned char *)str2);
+	return (EXIT_SUCCESS);
 }
