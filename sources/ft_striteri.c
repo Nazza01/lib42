@@ -6,7 +6,7 @@
 /*   By: Nathanael <nervin@student.42adel.org.au    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/08 09:33:50 by nervin            #+#    #+#             */
-/*   Updated: 2022/04/02 12:20:06 by Nathanael        ###   ########.fr       */
+/*   Updated: 2022/04/08 12:38:06 by Nathanael        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,6 @@ EXPLAINATION
 	character address from the string.
 	Keeps going until the end.
 */
-
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
 	unsigned int	i;

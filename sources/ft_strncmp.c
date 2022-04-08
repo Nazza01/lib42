@@ -6,7 +6,7 @@
 /*   By: Nathanael <nervin@student.42adel.org.au    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/08 09:37:44 by nervin            #+#    #+#             */
-/*   Updated: 2022/03/23 21:51:55 by Nathanael        ###   ########.fr       */
+/*   Updated: 2022/04/08 12:28:48 by Nathanael        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,6 @@ DESCRIPTION
 	Compares the first n bytes of two strings, s1 and s2.
 EXPLAINATION
 */
-
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t			i;

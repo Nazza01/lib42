@@ -6,7 +6,7 @@
 /*   By: Nathanael <nervin@student.42adel.org.au    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/08 09:34:04 by nervin            #+#    #+#             */
-/*   Updated: 2022/04/02 12:28:32 by Nathanael        ###   ########.fr       */
+/*   Updated: 2022/04/08 12:38:17 by Nathanael        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@ RETURN VALUES
 	The string create from the successive applications of 'f'. Returns NULL if
 	the allocation fails.
 */
-
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	size_t	i;

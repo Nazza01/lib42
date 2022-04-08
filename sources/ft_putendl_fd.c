@@ -6,7 +6,7 @@
 /*   By: Nathanael <nervin@student.42adel.org.au    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/08 09:33:13 by nervin            #+#    #+#             */
-/*   Updated: 2022/04/02 12:29:05 by Nathanael        ###   ########.fr       */
+/*   Updated: 2022/04/08 12:37:49 by Nathanael        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,6 @@ DESCRIPTION
 RETURN VALUES
 	Does not return anything.
 */
-
 void	ft_putendl_fd(char *s, int fd)
 {
 	if (!s)
