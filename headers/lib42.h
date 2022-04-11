@@ -6,12 +6,14 @@
 /*   By: Nathanael <nervin@student.42adel.org.au    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/23 21:34:17 by Nathanael         #+#    #+#             */
-/*   Updated: 2022/04/11 10:59:43 by Nathanael        ###   ########.fr       */
+/*   Updated: 2022/04/11 15:53:27 by Nathanael        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIB42_H
 # define LIB42_H
+
+# define EXIT_ERROR -1
 
 # include	<unistd.h>
 # include	<stdlib.h>

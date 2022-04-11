@@ -6,7 +6,7 @@
 /*   By: Nathanael <nervin@student.42adel.org.au    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/08 09:16:04 by nervin            #+#    #+#             */
-/*   Updated: 2022/03/23 21:51:55 by Nathanael        ###   ########.fr       */
+/*   Updated: 2022/04/08 12:47:32 by Nathanael        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ NAME
 PARAMETERS
 	1.	Sentence to search the word for.
 	2.	Word to find in the sentence.
-	3.	Amount of characters to search for.
+	3.	Amount of characters to search for.w
 RETURN VALUES
 	If word is an empty string, sentence is returned. 
 	If little occurs nowhere in big, NULL is returned.
