@@ -1,6 +1,5 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # GNU Make 3.81
- 
 # Copyright (C) 2006  Free Software Foundation, Inc.
 # This is free software; see the source for copying conditions.
 # There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
@@ -9,10 +8,11 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This program built for i386-apple-darwin11.3.0
  
 
-# Make data base, printed on Mon Apr 11 15:53:02 2022
+# Make data base, printed on Fri Apr 15 16:51:07 2022
 
 # Variables
 
+ 
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
@@ -22,7 +22,6 @@ HDRDIR = ./headers
 # environment
 VSCODE_LOG_NATIVE = false
 # automatic
- 
 ?D = $(patsubst %/,%,$(dir $?))
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
@@ -43,7 +42,7 @@ CFLAGS = -Wall -Wextra -Werror -std=c99 -I $(HDRDIR)
 # makefile (from `Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
 # makefile (from `Makefile', line 29)
-SOURCES := ./sources/ft_isnull.c ./sources/ft_strnstr.c ./sources/ft_ishex.c ./sources/ft_isdigit.c ./sources/ft_lstadd_back.c ./sources/ft_putstr_fd.c ./sources/ft_lstnew.c ./sources/get_next_line_utils.c ./sources/ft_strlcpy.c ./sources/ft_strlen.c ./sources/ft_isstring.c ./sources/ft_lstlast.c ./sources/ft_memcmp.c ./sources/ft_ispointer.c ./sources/ft_isperc.c ./sources/ft_putnbr_fd.c ./sources/ft_lstclear.c ./sources/ft_lstiter.c ./sources/ft_strchr.c ./sources/ft_printf.c ./sources/ft_striteri.c ./sources/ft_bzero.c ./sources/ft_strjoin.c ./sources/ft_isascii.c ./sources/ft_memcpy.c ./sources/get_next_line.c ./sources/ft_isprint.c ./sources/ft_error.c ./sources/ft_putendl_fd.c ./sources/ft_lstmap.c ./sources/ft_lstsize.c ./sources/ft_toupper.c ./sources/ft_split.c ./sources/ft_lstadd_front.c ./sources/ft_strrchr.c ./sources/ft_isalpha.c ./sources/ft_memchr.c ./sources/ft_putchar_fd.c ./sources/ft_memset.c ./sources/ft_substr.c ./sources/ft_strncmp.c ./sources/ft_strmapi.c ./sources/ft_strtrim.c ./sources/ft_ischaracter.c ./sources/ft_memmove.c ./sources/ft_strlcat.c ./sources/ft_calloc.c ./sources/ft_check.c ./sources/ft_numlen.c ./sources/ft_strdup.c ./sources/ft_isint.c ./sources/ft_atoi.c ./sources/ft_isunsigned.c ./sources/ft_isalnum.c ./sources/ft_lstdelone.c ./sources/ft_itoa.c ./sources/ft_tolower.c ./sources/ft_strcmp.c
+SOURCES := ./sources/ft_isnull.c ./sources/ft_strnstr.c ./sources/ft_ishex.c ./sources/ft_isdigit.c ./sources/ft_lstadd_back.c ./sources/ft_putstr_fd.c ./sources/ft_lstnew.c ./sources/get_next_line_utils.c ./sources/ft_strlcpy.c ./sources/ft_strlen.c ./sources/ft_isstring.c ./sources/ft_lstlast.c ./sources/ft_memcmp.c ./sources/ft_ispointer.c ./sources/ft_isperc.c ./sources/ft_putnbr_fd.c ./sources/ft_lstclear.c ./sources/ft_lstiter.c ./sources/ft_strchr.c ./sources/ft_printf.c ./sources/ft_striteri.c ./sources/ft_bzero.c ./sources/ft_strjoin.c ./sources/ft_isascii.c ./sources/ft_memcpy.c ./sources/get_next_line.c ./sources/ft_isprint.c ./sources/ft_error.c ./sources/ft_putendl_fd.c ./sources/ft_strncmp_end.c ./sources/ft_lstmap.c ./sources/ft_lstsize.c ./sources/ft_toupper.c ./sources/ft_split.c ./sources/ft_lstadd_front.c ./sources/ft_strrchr.c ./sources/ft_isalpha.c ./sources/ft_memchr.c ./sources/ft_putchar_fd.c ./sources/ft_memset.c ./sources/ft_substr.c ./sources/ft_strncmp.c ./sources/ft_strmapi.c ./sources/ft_strtrim.c ./sources/ft_ischaracter.c ./sources/ft_memmove.c ./sources/ft_strlcat.c ./sources/ft_calloc.c ./sources/ft_check.c ./sources/ft_numlen.c ./sources/ft_strdup.c ./sources/ft_isint.c ./sources/ft_atoi.c ./sources/ft_isunsigned.c ./sources/ft_isalnum.c ./sources/ft_lstdelone.c ./sources/ft_itoa.c ./sources/ft_tolower.c ./sources/ft_strcmp.c
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
@@ -51,7 +50,7 @@ __CFBundleIdentifier = com.microsoft.VSCode
 # environment
 P9K_SSH = 0
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/jp/p0rfvnj11tldxjm92zpbbsv80000gn/T/vscode-ipc-2c377d76-d591-4aaa-ac25-cf2d8be34be0.sock
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/jp/p0rfvnj11tldxjm92zpbbsv80000gn/T/vscode-ipc-675eb8b4-38a5-4885-82c7-06f00b165b70.sock
 # environment
 VSCODE_CWD = /
 # environment
@@ -61,19 +60,22 @@ LSCOLORS = Gxfxcxdxbxegedabagacad
 # makefile (from `Makefile', line 24)
 TEMPDIR = $(BLDDIR) $(OBJDIR)
 # environment
+LaunchInstanceID = 4FBA7C08-044D-4427-BF3B-6375EF83C9B6
+# environment
 VSCODE_LOG_STACK = false
 # environment
 ELECTRON_RUN_AS_NODE = 1
+ 
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.1xHIKiChnA/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.rYf0pHSCLu/Listeners
 # makefile (from `Makefile', line 22)
 SRCDIR = ./sources
 # automatic
 %F = $(notdir $%)
 # environment
-DISPLAY = /private/tmp/com.apple.launchd.ojLrPbIkrR/org.xquartz:0
+DISPLAY = /private/tmp/com.apple.launchd.ejs9uwxdnB/org.xquartz:0
 # makefile (from `Makefile', line 18)
 BLDDIR = ./build
 # environment
@@ -89,7 +91,7 @@ HOME = /Users/nathanael
 # default
 MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/nathanael/Library/Application Support/Code/CachedData/8dfae7a5cd50421d10cd99cb873990460525a898
+VSCODE_CODE_CACHE_PATH = /Users/nathanael/Library/Application Support/Code/CachedData/dfd34e8260c270da74b5c2d86d61aee4b6d56977
 # environment
 LOGNAME = nathanael
 # environment
@@ -137,7 +139,7 @@ TMPDIR = /var/folders/jp/p0rfvnj11tldxjm92zpbbsv80000gn/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/nathanael/Library/Application Support/Code/1.66.1-main.sock
+VSCODE_IPC_HOOK = /Users/nathanael/Library/Application Support/Code/1.66.2-main.sock
 # makefile
 MAKEFLAGS = Rrqp
 # environment
@@ -145,7 +147,7 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.51253358.51253364
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.51738003.51738009
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # automatic
@@ -166,6 +168,8 @@ MAKELIB = ar -rcs
 PAGER = less
 # environment
 LC_ALL = C
+# environment
+SECURITYSESSIONID = 186a6
 # automatic
 ^F = $(notdir $^)
 # default
@@ -173,16 +177,16 @@ SUFFIXES :=
 # default
 .INCLUDE_DIRS = /usr/local/include
 # environment
- 
 MAKELEVEL := 0
 # makefile (from `Makefile', line 31)
-OBJECTS := ./objects/ft_isnull.o ./objects/ft_strnstr.o ./objects/ft_ishex.o ./objects/ft_isdigit.o ./objects/ft_lstadd_back.o ./objects/ft_putstr_fd.o ./objects/ft_lstnew.o ./objects/get_next_line_utils.o ./objects/ft_strlcpy.o ./objects/ft_strlen.o ./objects/ft_isstring.o ./objects/ft_lstlast.o ./objects/ft_memcmp.o ./objects/ft_ispointer.o ./objects/ft_isperc.o ./objects/ft_putnbr_fd.o ./objects/ft_lstclear.o ./objects/ft_lstiter.o ./objects/ft_strchr.o ./objects/ft_printf.o ./objects/ft_striteri.o ./objects/ft_bzero.o ./objects/ft_strjoin.o ./objects/ft_isascii.o ./objects/ft_memcpy.o ./objects/get_next_line.o ./objects/ft_isprint.o ./objects/ft_error.o ./objects/ft_putendl_fd.o ./objects/ft_lstmap.o ./objects/ft_lstsize.o ./objects/ft_toupper.o ./objects/ft_split.o ./objects/ft_lstadd_front.o ./objects/ft_strrchr.o ./objects/ft_isalpha.o ./objects/ft_memchr.o ./objects/ft_putchar_fd.o ./objects/ft_memset.o ./objects/ft_substr.o ./objects/ft_strncmp.o ./objects/ft_strmapi.o ./objects/ft_strtrim.o ./objects/ft_ischaracter.o ./objects/ft_memmove.o ./objects/ft_strlcat.o ./objects/ft_calloc.o ./objects/ft_check.o ./objects/ft_numlen.o ./objects/ft_strdup.o ./objects/ft_isint.o ./objects/ft_atoi.o ./objects/ft_isunsigned.o ./objects/ft_isalnum.o ./objects/ft_lstdelone.o ./objects/ft_itoa.o ./objects/ft_tolower.o ./objects/ft_strcmp.o
+ 
+OBJECTS := ./objects/ft_isnull.o ./objects/ft_strnstr.o ./objects/ft_ishex.o ./objects/ft_isdigit.o ./objects/ft_lstadd_back.o ./objects/ft_putstr_fd.o ./objects/ft_lstnew.o ./objects/get_next_line_utils.o ./objects/ft_strlcpy.o ./objects/ft_strlen.o ./objects/ft_isstring.o ./objects/ft_lstlast.o ./objects/ft_memcmp.o ./objects/ft_ispointer.o ./objects/ft_isperc.o ./objects/ft_putnbr_fd.o ./objects/ft_lstclear.o ./objects/ft_lstiter.o ./objects/ft_strchr.o ./objects/ft_printf.o ./objects/ft_striteri.o ./objects/ft_bzero.o ./objects/ft_strjoin.o ./objects/ft_isascii.o ./objects/ft_memcpy.o ./objects/get_next_line.o ./objects/ft_isprint.o ./objects/ft_error.o ./objects/ft_putendl_fd.o ./objects/ft_strncmp_end.o ./objects/ft_lstmap.o ./objects/ft_lstsize.o ./objects/ft_toupper.o ./objects/ft_split.o ./objects/ft_lstadd_front.o ./objects/ft_strrchr.o ./objects/ft_isalpha.o ./objects/ft_memchr.o ./objects/ft_putchar_fd.o ./objects/ft_memset.o ./objects/ft_substr.o ./objects/ft_strncmp.o ./objects/ft_strmapi.o ./objects/ft_strtrim.o ./objects/ft_ischaracter.o ./objects/ft_memmove.o ./objects/ft_strlcat.o ./objects/ft_calloc.o ./objects/ft_check.o ./objects/ft_numlen.o ./objects/ft_strdup.o ./objects/ft_isint.o ./objects/ft_atoi.o ./objects/ft_isunsigned.o ./objects/ft_isalnum.o ./objects/ft_lstdelone.o ./objects/ft_itoa.o ./objects/ft_tolower.o ./objects/ft_strcmp.o
 # environment
 LANG = C
 # environment
-VSCODE_PID = 9130
+VSCODE_PID = 424
 # variable set hash-table stats:
-# Load=83/1024=8%, Rehash=0, Collisions=6/133=5%
+# Load=85/1024=8%, Rehash=0, Collisions=6/135=4%
 
 # Pattern-specific Variable Values
 
@@ -252,6 +256,7 @@ sources/ft_memchr.c:
 #  File has not been updated.
 
 # Not a target:
+ 
 sources/ft_memcmp.c:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -370,6 +375,7 @@ objects/ft_printf.o: sources/ft_printf.c
 objects/ft_check.o: sources/ft_check.c
 #  Implicit rule search has not been done.
 #  Implicit/static pattern stem: `ft_check'
+ 
 #  Modification time never checked.
 #  File has not been updated.
 #  commands to execute (from `Makefile', line 59):
@@ -411,7 +417,6 @@ sources/ft_strchr.c:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
- 
 
 # Not a target:
 sources/ft_strjoin.c:
@@ -487,6 +492,7 @@ sources/ft_strlcat.c:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+ 
 
 # Not a target:
 sources/ft_ishex.c:
@@ -509,6 +515,17 @@ sources/ft_bzero.c:
 objects/ft_lstmap.o: sources/ft_lstmap.c
 #  Implicit rule search has not been done.
 #  Implicit/static pattern stem: `ft_lstmap'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@clear
+	@printf "Linked %s to %s\n" $< $@
+	
+
+objects/ft_strncmp_end.o: sources/ft_strncmp_end.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `ft_strncmp_end'
 #  Modification time never checked.
 #  File has not been updated.
 #  commands to execute (from `Makefile', line 59):
@@ -553,6 +570,13 @@ objects/ft_lstnew.o: sources/ft_lstnew.c
 	@clear
 	@printf "Linked %s to %s\n" $< $@
 	
+
+# Not a target:
+sources/ft_strncmp_end.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+ 
+#  File has not been updated.
 
 # Not a target:
 sources/ft_striteri.c:
@@ -658,6 +682,7 @@ objects/ft_substr.o: sources/ft_substr.c
 #  Modification time never checked.
 #  File has not been updated.
 #  commands to execute (from `Makefile', line 59):
+ 
 	@$(CC) $(CFLAGS) -c $< -o $@
 	@clear
 	@printf "Linked %s to %s\n" $< $@
@@ -690,7 +715,6 @@ objects/ft_atoi.o: sources/ft_atoi.c
 	@clear
 	@printf "Linked %s to %s\n" $< $@
 	
- 
 
 # Not a target:
 sources/ft_putnbr_fd.c:
@@ -805,7 +829,8 @@ objects/ft_striteri.o: sources/ft_striteri.c
 	@printf "Linked %s to %s\n" $< $@
 	
 
-build/lib42.a: objects/ft_isnull.o objects/ft_strnstr.o objects/ft_ishex.o objects/ft_isdigit.o objects/ft_lstadd_back.o objects/ft_putstr_fd.o objects/ft_lstnew.o objects/get_next_line_utils.o objects/ft_strlcpy.o objects/ft_strlen.o objects/ft_isstring.o objects/ft_lstlast.o objects/ft_memcmp.o objects/ft_ispointer.o objects/ft_isperc.o objects/ft_putnbr_fd.o objects/ft_lstclear.o objects/ft_lstiter.o objects/ft_strchr.o objects/ft_printf.o objects/ft_striteri.o objects/ft_bzero.o objects/ft_strjoin.o objects/ft_isascii.o objects/ft_memcpy.o objects/get_next_line.o objects/ft_isprint.o objects/ft_error.o objects/ft_putendl_fd.o objects/ft_lstmap.o objects/ft_lstsize.o objects/ft_toupper.o objects/ft_split.o objects/ft_lstadd_front.o objects/ft_strrchr.o objects/ft_isalpha.o objects/ft_memchr.o objects/ft_putchar_fd.o objects/ft_memset.o objects/ft_substr.o objects/ft_strncmp.o objects/ft_strmapi.o objects/ft_strtrim.o objects/ft_ischaracter.o objects/ft_memmove.o objects/ft_strlcat.o objects/ft_calloc.o objects/ft_check.o objects/ft_numlen.o objects/ft_strdup.o objects/ft_isint.o objects/ft_atoi.o objects/ft_isunsigned.o objects/ft_isalnum.o objects/ft_lstdelone.o objects/ft_itoa.o objects/ft_tolower.o objects/ft_strcmp.o
+ 
+build/lib42.a: objects/ft_isnull.o objects/ft_strnstr.o objects/ft_ishex.o objects/ft_isdigit.o objects/ft_lstadd_back.o objects/ft_putstr_fd.o objects/ft_lstnew.o objects/get_next_line_utils.o objects/ft_strlcpy.o objects/ft_strlen.o objects/ft_isstring.o objects/ft_lstlast.o objects/ft_memcmp.o objects/ft_ispointer.o objects/ft_isperc.o objects/ft_putnbr_fd.o objects/ft_lstclear.o objects/ft_lstiter.o objects/ft_strchr.o objects/ft_printf.o objects/ft_striteri.o objects/ft_bzero.o objects/ft_strjoin.o objects/ft_isascii.o objects/ft_memcpy.o objects/get_next_line.o objects/ft_isprint.o objects/ft_error.o objects/ft_putendl_fd.o objects/ft_strncmp_end.o objects/ft_lstmap.o objects/ft_lstsize.o objects/ft_toupper.o objects/ft_split.o objects/ft_lstadd_front.o objects/ft_strrchr.o objects/ft_isalpha.o objects/ft_memchr.o objects/ft_putchar_fd.o objects/ft_memset.o objects/ft_substr.o objects/ft_strncmp.o objects/ft_strmapi.o objects/ft_strtrim.o objects/ft_ischaracter.o objects/ft_memmove.o objects/ft_strlcat.o objects/ft_calloc.o objects/ft_check.o objects/ft_numlen.o objects/ft_strdup.o objects/ft_isint.o objects/ft_atoi.o objects/ft_isunsigned.o objects/ft_isalnum.o objects/ft_lstdelone.o objects/ft_itoa.o objects/ft_tolower.o objects/ft_strcmp.o
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -929,6 +954,7 @@ re: clean all
 #  commands to execute (from `Makefile', line 74):
 	@clear
 	@printf "Cleaned and remade all files!\n"
+ 
 	
 
 objects/ft_strchr.o: sources/ft_strchr.c
@@ -945,7 +971,6 @@ objects/ft_strchr.o: sources/ft_strchr.c
 # Not a target:
 sources/ft_isalnum.c:
 #  Implicit rule search has not been done.
- 
 #  Modification time never checked.
 #  File has not been updated.
 
@@ -1096,6 +1121,7 @@ objects/ft_isascii.o: sources/ft_isascii.c
 	@printf "Linked %s to %s\n" $< $@
 	
 
+ 
 # Not a target:
 sources/ft_putendl_fd.c:
 #  Implicit rule search has not been done.
@@ -1212,7 +1238,6 @@ objects/ft_strmapi.o: sources/ft_strmapi.c
 #  commands to execute (from `Makefile', line 59):
 	@$(CC) $(CFLAGS) -c $< -o $@
 	@clear
- 
 	@printf "Linked %s to %s\n" $< $@
 	
 
@@ -1273,6 +1298,7 @@ objects/ft_memcmp.o: sources/ft_memcmp.c
 #  Modification time never checked.
 #  File has not been updated.
 #  commands to execute (from `Makefile', line 59):
+ 
 	@$(CC) $(CFLAGS) -c $< -o $@
 	@clear
 	@printf "Linked %s to %s\n" $< $@
@@ -1290,7 +1316,7 @@ objects/ft_strlen.o: sources/ft_strlen.c
 	
 
 # files hash-table stats:
-# Load=125/1024=12%, Rehash=0, Collisions=26/259=10%
+# Load=127/1024=12%, Rehash=0, Collisions=26/263=10%
 # VPATH Search Paths
 
 # No `vpath' search paths.
@@ -1302,6 +1328,6 @@ objects/ft_strlen.o: sources/ft_strlen.c
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Mon Apr 11 15:53:02 2022
+# Finished Make data base on Fri Apr 15 16:51:07 2022
 
  

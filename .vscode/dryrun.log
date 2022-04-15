@@ -3,9 +3,11 @@ make: Entering directory `/Users/nathanael/Github/42-School/lib42'
 mkdir -p ./build ./objects
 clear
 printf "Made directories: %s\n" ./build ./objects
+ 
 gcc -Wall -Wextra -Werror -std=c99 -I ./headers -c sources/ft_isnull.c -o objects/ft_isnull.o
 clear
 printf "Linked %s to %s\n" sources/ft_isnull.c objects/ft_isnull.o
+ 
 gcc -Wall -Wextra -Werror -std=c99 -I ./headers -c sources/ft_strnstr.c -o objects/ft_strnstr.o
 clear
 printf "Linked %s to %s\n" sources/ft_strnstr.c objects/ft_strnstr.o
@@ -36,6 +38,7 @@ printf "Linked %s to %s\n" sources/ft_strlen.c objects/ft_strlen.o
 gcc -Wall -Wextra -Werror -std=c99 -I ./headers -c sources/ft_isstring.c -o objects/ft_isstring.o
 clear
 printf "Linked %s to %s\n" sources/ft_isstring.c objects/ft_isstring.o
+ 
 gcc -Wall -Wextra -Werror -std=c99 -I ./headers -c sources/ft_lstlast.c -o objects/ft_lstlast.o
 clear
 printf "Linked %s to %s\n" sources/ft_lstlast.c objects/ft_lstlast.o
@@ -57,12 +60,14 @@ printf "Linked %s to %s\n" sources/ft_lstclear.c objects/ft_lstclear.o
 gcc -Wall -Wextra -Werror -std=c99 -I ./headers -c sources/ft_lstiter.c -o objects/ft_lstiter.o
 clear
 printf "Linked %s to %s\n" sources/ft_lstiter.c objects/ft_lstiter.o
+ 
 gcc -Wall -Wextra -Werror -std=c99 -I ./headers -c sources/ft_strchr.c -o objects/ft_strchr.o
 clear
 printf "Linked %s to %s\n" sources/ft_strchr.c objects/ft_strchr.o
 gcc -Wall -Wextra -Werror -std=c99 -I ./headers -c sources/ft_printf.c -o objects/ft_printf.o
 clear
 printf "Linked %s to %s\n" sources/ft_printf.c objects/ft_printf.o
+ 
 gcc -Wall -Wextra -Werror -std=c99 -I ./headers -c sources/ft_striteri.c -o objects/ft_striteri.o
 clear
 printf "Linked %s to %s\n" sources/ft_striteri.c objects/ft_striteri.o
@@ -78,18 +83,23 @@ printf "Linked %s to %s\n" sources/ft_isascii.c objects/ft_isascii.o
 gcc -Wall -Wextra -Werror -std=c99 -I ./headers -c sources/ft_memcpy.c -o objects/ft_memcpy.o
 clear
 printf "Linked %s to %s\n" sources/ft_memcpy.c objects/ft_memcpy.o
+ 
 gcc -Wall -Wextra -Werror -std=c99 -I ./headers -c sources/get_next_line.c -o objects/get_next_line.o
 clear
 printf "Linked %s to %s\n" sources/get_next_line.c objects/get_next_line.o
 gcc -Wall -Wextra -Werror -std=c99 -I ./headers -c sources/ft_isprint.c -o objects/ft_isprint.o
 clear
 printf "Linked %s to %s\n" sources/ft_isprint.c objects/ft_isprint.o
+ 
 gcc -Wall -Wextra -Werror -std=c99 -I ./headers -c sources/ft_error.c -o objects/ft_error.o
 clear
 printf "Linked %s to %s\n" sources/ft_error.c objects/ft_error.o
 gcc -Wall -Wextra -Werror -std=c99 -I ./headers -c sources/ft_putendl_fd.c -o objects/ft_putendl_fd.o
 clear
 printf "Linked %s to %s\n" sources/ft_putendl_fd.c objects/ft_putendl_fd.o
+gcc -Wall -Wextra -Werror -std=c99 -I ./headers -c sources/ft_strncmp_end.c -o objects/ft_strncmp_end.o
+clear
+printf "Linked %s to %s\n" sources/ft_strncmp_end.c objects/ft_strncmp_end.o
 gcc -Wall -Wextra -Werror -std=c99 -I ./headers -c sources/ft_lstmap.c -o objects/ft_lstmap.o
 clear
 printf "Linked %s to %s\n" sources/ft_lstmap.c objects/ft_lstmap.o
@@ -99,9 +109,11 @@ printf "Linked %s to %s\n" sources/ft_lstsize.c objects/ft_lstsize.o
 gcc -Wall -Wextra -Werror -std=c99 -I ./headers -c sources/ft_toupper.c -o objects/ft_toupper.o
 clear
 printf "Linked %s to %s\n" sources/ft_toupper.c objects/ft_toupper.o
+ 
 gcc -Wall -Wextra -Werror -std=c99 -I ./headers -c sources/ft_split.c -o objects/ft_split.o
 clear
 printf "Linked %s to %s\n" sources/ft_split.c objects/ft_split.o
+ 
 gcc -Wall -Wextra -Werror -std=c99 -I ./headers -c sources/ft_lstadd_front.c -o objects/ft_lstadd_front.o
 clear
 printf "Linked %s to %s\n" sources/ft_lstadd_front.c objects/ft_lstadd_front.o
@@ -117,10 +129,12 @@ printf "Linked %s to %s\n" sources/ft_memchr.c objects/ft_memchr.o
 gcc -Wall -Wextra -Werror -std=c99 -I ./headers -c sources/ft_putchar_fd.c -o objects/ft_putchar_fd.o
 clear
 printf "Linked %s to %s\n" sources/ft_putchar_fd.c objects/ft_putchar_fd.o
+ 
 gcc -Wall -Wextra -Werror -std=c99 -I ./headers -c sources/ft_memset.c -o objects/ft_memset.o
 clear
 printf "Linked %s to %s\n" sources/ft_memset.c objects/ft_memset.o
 gcc -Wall -Wextra -Werror -std=c99 -I ./headers -c sources/ft_substr.c -o objects/ft_substr.o
+ 
 clear
 printf "Linked %s to %s\n" sources/ft_substr.c objects/ft_substr.o
 gcc -Wall -Wextra -Werror -std=c99 -I ./headers -c sources/ft_strncmp.c -o objects/ft_strncmp.o
@@ -135,14 +149,15 @@ printf "Linked %s to %s\n" sources/ft_strtrim.c objects/ft_strtrim.o
 gcc -Wall -Wextra -Werror -std=c99 -I ./headers -c sources/ft_ischaracter.c -o objects/ft_ischaracter.o
 clear
 printf "Linked %s to %s\n" sources/ft_ischaracter.c objects/ft_ischaracter.o
+ 
 gcc -Wall -Wextra -Werror -std=c99 -I ./headers -c sources/ft_memmove.c -o objects/ft_memmove.o
 clear
 printf "Linked %s to %s\n" sources/ft_memmove.c objects/ft_memmove.o
 gcc -Wall -Wextra -Werror -std=c99 -I ./headers -c sources/ft_strlcat.c -o objects/ft_strlcat.o
 clear
 printf "Linked %s to %s\n" sources/ft_strlcat.c objects/ft_strlcat.o
-gcc -Wall -Wextra -Werror -std=c99 -I ./headers -c sources/ft_calloc.c -o objects/ft_calloc.o
  
+gcc -Wall -Wextra -Werror -std=c99 -I ./headers -c sources/ft_calloc.c -o objects/ft_calloc.o
 clear
 printf "Linked %s to %s\n" sources/ft_calloc.c objects/ft_calloc.o
 gcc -Wall -Wextra -Werror -std=c99 -I ./headers -c sources/ft_check.c -o objects/ft_check.o
@@ -157,10 +172,12 @@ printf "Linked %s to %s\n" sources/ft_strdup.c objects/ft_strdup.o
 gcc -Wall -Wextra -Werror -std=c99 -I ./headers -c sources/ft_isint.c -o objects/ft_isint.o
 clear
 printf "Linked %s to %s\n" sources/ft_isint.c objects/ft_isint.o
+ 
 gcc -Wall -Wextra -Werror -std=c99 -I ./headers -c sources/ft_atoi.c -o objects/ft_atoi.o
 clear
 printf "Linked %s to %s\n" sources/ft_atoi.c objects/ft_atoi.o
 gcc -Wall -Wextra -Werror -std=c99 -I ./headers -c sources/ft_isunsigned.c -o objects/ft_isunsigned.o
+ 
 clear
 printf "Linked %s to %s\n" sources/ft_isunsigned.c objects/ft_isunsigned.o
 gcc -Wall -Wextra -Werror -std=c99 -I ./headers -c sources/ft_isalnum.c -o objects/ft_isalnum.o
@@ -178,7 +195,8 @@ printf "Linked %s to %s\n" sources/ft_tolower.c objects/ft_tolower.o
 gcc -Wall -Wextra -Werror -std=c99 -I ./headers -c sources/ft_strcmp.c -o objects/ft_strcmp.o
 clear
 printf "Linked %s to %s\n" sources/ft_strcmp.c objects/ft_strcmp.o
-ar -rcs build/lib42.a objects/ft_isnull.o objects/ft_strnstr.o objects/ft_ishex.o objects/ft_isdigit.o objects/ft_lstadd_back.o objects/ft_putstr_fd.o objects/ft_lstnew.o objects/get_next_line_utils.o objects/ft_strlcpy.o objects/ft_strlen.o objects/ft_isstring.o objects/ft_lstlast.o objects/ft_memcmp.o objects/ft_ispointer.o objects/ft_isperc.o objects/ft_putnbr_fd.o objects/ft_lstclear.o objects/ft_lstiter.o objects/ft_strchr.o objects/ft_printf.o objects/ft_striteri.o objects/ft_bzero.o objects/ft_strjoin.o objects/ft_isascii.o objects/ft_memcpy.o objects/get_next_line.o objects/ft_isprint.o objects/ft_error.o objects/ft_putendl_fd.o objects/ft_lstmap.o objects/ft_lstsize.o objects/ft_toupper.o objects/ft_split.o objects/ft_lstadd_front.o objects/ft_strrchr.o objects/ft_isalpha.o objects/ft_memchr.o objects/ft_putchar_fd.o objects/ft_memset.o objects/ft_substr.o objects/ft_strncmp.o objects/ft_strmapi.o objects/ft_strtrim.o objects/ft_ischaracter.o objects/ft_memmove.o objects/ft_strlcat.o objects/ft_calloc.o objects/ft_check.o objects/ft_numlen.o objects/ft_strdup.o objects/ft_isint.o objects/ft_atoi.o objects/ft_isunsigned.o objects/ft_isalnum.o objects/ft_lstdelone.o objects/ft_itoa.o objects/ft_tolower.o objects/ft_strcmp.o
+ 
+ar -rcs build/lib42.a objects/ft_isnull.o objects/ft_strnstr.o objects/ft_ishex.o objects/ft_isdigit.o objects/ft_lstadd_back.o objects/ft_putstr_fd.o objects/ft_lstnew.o objects/get_next_line_utils.o objects/ft_strlcpy.o objects/ft_strlen.o objects/ft_isstring.o objects/ft_lstlast.o objects/ft_memcmp.o objects/ft_ispointer.o objects/ft_isperc.o objects/ft_putnbr_fd.o objects/ft_lstclear.o objects/ft_lstiter.o objects/ft_strchr.o objects/ft_printf.o objects/ft_striteri.o objects/ft_bzero.o objects/ft_strjoin.o objects/ft_isascii.o objects/ft_memcpy.o objects/get_next_line.o objects/ft_isprint.o objects/ft_error.o objects/ft_putendl_fd.o objects/ft_strncmp_end.o objects/ft_lstmap.o objects/ft_lstsize.o objects/ft_toupper.o objects/ft_split.o objects/ft_lstadd_front.o objects/ft_strrchr.o objects/ft_isalpha.o objects/ft_memchr.o objects/ft_putchar_fd.o objects/ft_memset.o objects/ft_substr.o objects/ft_strncmp.o objects/ft_strmapi.o objects/ft_strtrim.o objects/ft_ischaracter.o objects/ft_memmove.o objects/ft_strlcat.o objects/ft_calloc.o objects/ft_check.o objects/ft_numlen.o objects/ft_strdup.o objects/ft_isint.o objects/ft_atoi.o objects/ft_isunsigned.o objects/ft_isalnum.o objects/ft_lstdelone.o objects/ft_itoa.o objects/ft_tolower.o objects/ft_strcmp.o
 clear
 printf "Library %s built successfully\n" build/lib42.a
 make: Leaving directory `/Users/nathanael/Github/42-School/lib42'

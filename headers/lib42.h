@@ -6,7 +6,7 @@
 /*   By: Nathanael <nervin@student.42adel.org.au    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/23 21:34:17 by Nathanael         #+#    #+#             */
-/*   Updated: 2022/04/11 16:04:41 by Nathanael        ###   ########.fr       */
+/*   Updated: 2022/04/15 16:51:43 by Nathanael        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,7 @@ int		ft_get_neg_num_len(int number);
 int		ft_isnull(void *data);
 int		ft_strcmp(char *first_str, char *second_str);
 int		ft_strncmp_end(const char *s1, const char *s2, size_t n);
+void	ft_free_arr(char **arr);
 
 /****************************************/
 /*				LIBFT					*/
