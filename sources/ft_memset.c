@@ -6,7 +6,7 @@
 /*   By: Nathanael <nervin@student.42adel.org.au    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/08 09:36:24 by nervin            #+#    #+#             */
-/*   Updated: 2022/03/23 21:51:55 by Nathanael        ###   ########.fr       */
+/*   Updated: 2022/04/29 14:21:28 by Nathanael        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,14 @@ RETURN VALUES
 */
 void	*ft_memset(void *s, int c, size_t n)
 {
-	unsigned char	*p;
+	unsigned char	*mem;
 
-	p = (unsigned char *)s;
-	while (n--)
-		*p++ = (unsigned char)c;
+	mem = s;
+	while (n > 0)
+	{
+		*mem = c;
+		mem++;
+		n--;
+	}
 	return (s);
 }

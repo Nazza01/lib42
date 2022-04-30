@@ -1,3 +1,6 @@
+# Macos specific
+.DS_Store
+
 # Folders
 objects/
 build/

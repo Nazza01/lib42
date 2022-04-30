@@ -6,26 +6,11 @@
 /*   By: Nathanael <nervin@student.42adel.org.au    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/08 09:32:11 by nervin            #+#    #+#             */
-/*   Updated: 2022/03/23 21:52:22 by Nathanael        ###   ########.fr       */
+/*   Updated: 2022/04/30 23:19:20 by Nathanael        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "lib42.h"
-
-/*
-ft_abs(int n)
-DESCRIPTION
-	Takes in a positive or negative number, n, takes the absolute value, removing
-	any negative signs from n.
-RETURNS
-	The non-negative integer representation of n. 
-*/
-static int	ft_abs(int n)
-{
-	if (n < 0)
-		return (-1 * n);
-	return (n);
-}
 
 /*
 ft_intlen(int n)

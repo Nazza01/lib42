@@ -6,7 +6,7 @@
 /*   By: Nathanael <nervin@student.42adel.org.au    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/08 11:53:43 by nervin            #+#    #+#             */
-/*   Updated: 2022/03/23 21:51:55 by Nathanael        ###   ########.fr       */
+/*   Updated: 2022/04/29 14:20:14 by Nathanael        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,11 +26,5 @@ RETURN VALUES
 */
 void	ft_bzero(void *s, size_t l)
 {
-	unsigned char	*dest;
-	size_t			i;
-
-	dest = s;
-	i = 0;
-	while (i < l)
-		dest[i++] = 0;
+	ft_memset(s, 0, l);
 }
