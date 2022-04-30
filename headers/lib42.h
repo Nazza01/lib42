@@ -34,6 +34,7 @@ int		ft_isnull(void *data);
 int		ft_strcmp(char *first_str, char *second_str);
 int		ft_strncmp_end(const char *s1, const char *s2, size_t n);
 void	ft_free_arr(char **arr);
+void	ft_arg_print(int ac, char **av);
 
 /****************************************/
 /*				LIBFT					*/
