@@ -6,13 +6,15 @@
 /*   By: Nathanael <nervin@student.42adel.org.au    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/23 21:34:17 by Nathanael         #+#    #+#             */
-/*   Updated: 2022/04/15 16:51:43 by Nathanael        ###   ########.fr       */
+/*   Updated: 2022/05/01 00:11:28 by Nathanael        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIB42_H
 # define LIB42_H
 
+# define EXIT_SUCCESS 0
+# define EXIT_FAILURE 1
 # define EXIT_ERROR -1
 
 # include	<unistd.h>
@@ -34,7 +36,9 @@ int		ft_isnull(void *data);
 int		ft_strcmp(char *first_str, char *second_str);
 int		ft_strncmp_end(const char *s1, const char *s2, size_t n);
 void	ft_free_arr(char **arr);
-void	ft_arg_print(int ac, char **av);
+char	**ft_free_n(char **arr, int size);
+void	ft_free_arg(char **arg);
+int		ft_abs(int tofind);
 
 /****************************************/
 /*				LIBFT					*/
