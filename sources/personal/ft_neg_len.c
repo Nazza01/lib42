@@ -1,34 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_numlen.c                                        :+:      :+:    :+:   */
+/*   ft_get_neg_len.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: Nathanael <nervin@student.42adel.org.au    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/03 22:05:08 by Nathanael         #+#    #+#             */
-/*   Updated: 2022/05/03 22:07:44 by Nathanael        ###   ########.fr       */
+/*   Created: 2021/11/12 14:19:58 by nervin            #+#    #+#             */
+/*   Updated: 2022/05/03 22:07:11 by Nathanael        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "lib42.h"
 
 /*
-ft_numlen
-	Calculates the length of a number using a number and the initial length
-	Appends the null terminating character to the end of the string
+Calculates the length of a negative number and returns the total length.
 */
-char	*ft_numlen(unsigned long num, int *len)
+int	ft_get_neg_len(int number)
 {
-	char	*str;
+	int	length;
 
-	while (num > 15)
+	length = !number;
+	while (number)
 	{
-		num = num / 16;
-		*len += 1;
+		length++;
+		number /= 10;
 	}
-	str = malloc(sizeof(char) * (*len + 1));
-	if (str == NULL)
-		return (NULL);
-	str[*len] = '\0';
-	return (str);
+	return (length);
 }

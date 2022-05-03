@@ -6,7 +6,7 @@
 /*   By: Nathanael <nervin@student.42adel.org.au    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/23 21:34:17 by Nathanael         #+#    #+#             */
-/*   Updated: 2022/05/01 00:11:28 by Nathanael        ###   ########.fr       */
+/*   Updated: 2022/05/03 22:06:18 by Nathanael        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,8 @@
 /*			PERSONAL_ADDED				*/
 /****************************************/
 void	ft_error(char *message, int F_TYPE);
-int		ft_get_pos_num_length(int number);
-int		ft_get_neg_num_len(int number);
+int		ft_get_pos_len(int number);
+int		ft_get_neg_len(int number);
 int		ft_isnull(void *data);
 int		ft_strcmp(char *first_str, char *second_str);
 int		ft_strncmp_end(const char *s1, const char *s2, size_t n);
