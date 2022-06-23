@@ -25,10 +25,10 @@ RETURN VALUES
 */
 size_t	ft_strlen(const char *str)
 {
-	int	i;
+	int	index;
 
-	i = 0;
-	while (str[i])
-		i++;
-	return (i);
+	index = 0;
+	while (str[index])
+		index++;
+	return (index);
 }
