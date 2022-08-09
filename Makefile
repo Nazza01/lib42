@@ -6,81 +6,81 @@
 #    By: Nathanael <nervin@student.42adel.org.au    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/01/25 23:45:33 by Nathanael         #+#    #+#              #
-#    Updated: 2022/04/30 23:20:00 by Nathanael        ###   ########.fr        #
+#    Updated: 2022/08/09 16:22:18 by Nathanael        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME 	=	lib42.a
+# README
+#	This makefile can be used in a Piscine style project (CPPModules, CPiscine etc)
+# 	It will find all directories that you specify below
+# 	
+#	The below will find all directories starting with ex
+#	TOFIND = ex
+# 	Will find all folders starting with ex e.g: ex01, ex02, ex03
+# 	
+# 	As long as the corresponding folders have makefiles inside with the 
+# 	following rules: clean all
+#	the program will work, you can customise it as needed.
 
-################################################################################
-#								DIRECTORIES									   #
-################################################################################
-BLDDIR	=	./build
-HDRDIR	=	./headers
-LIBDIR	=	./libraries
-OBJDIR	=	./objects
-SRCDIR	=	./sources
+DIRS		:=	 ft_printf get_next_line libft personal
 
-TEMPDIR	=	$(BLDDIR) $(OBJDIR)
+FINDALL_DIR	:=	$(addprefix libraries/, $(DIRS))
 
-################################################################################
-#								FILES										   #
-################################################################################
-SOURCES	:=	$(shell find $(SRCDIR) -name '*.c')
-HEADERS	:=	$(shell find $(HDRDIR) -name '*.h')
-OBJECTS	:=	$(SOURCES:$(SRCDIR)/%.c=$(OBJDIR)/%.o)
-
-CLNDIR	:=	$(BLDDIR)
-FCLN	:=	$(OBJDIR)
-
-################################################################################
-#								COMPILER/FLAGS								   #
-################################################################################
-CC		=	clang
-CFLAGS	=	-Wall -Wextra -Werror -std=c99 -I $(HDRDIR)
-
-################################################################################
-#								EXTERNAL UTILITIES							   #
-################################################################################
-RM		=	rm -rf
-MKDIR	=	mkdir -p
-CP		=	cp
-
-MAKELIB	=	ar -rcs
-
-################################################################################
-#								COMMANDS									   #
-################################################################################
 .DELETE_ON_ERROR:
+.SILENT:
 
-all: dirs $(BLDDIR)/$(NAME)
+all: ca ma
 
-dirs:
-	@$(MKDIR) $(TEMPDIR)
-	@clear
-	@printf "Made directories: %s\n" $(TEMPDIR)
+ft:
+	$(MAKE) -C libraries/ft_printf
 
-$(BLDDIR)/$(NAME): $(OBJECTS)
-	@$(MAKELIB) $@ $^
-	@clear
-	@printf "Library %s built successfully\n" $@
+printf:
+	$(MAKE) -C libraries/get_next_line
 
-$(OBJDIR)/%.o : $(SRCDIR)/%.c
-	@$(MKDIR) '$(@D)'
-	@$(CC) $(CFLAGS) -c $< -o $@
-	@clear
-	@printf "Linked source: %s into object: %s\n" $< $@
+gnl:
+	$(MAKE) -C libraries/libft
 
-clean:
-	@$(RM) $(CLNDIR)
-	@clear
-	@printf "Cleaned: %s\n" $(CLNDIR)
+personal:
+	$(MAKE) -C libraries/personal
 
-fclean:
-	@$(RM) $(FCLN)
-	@clear
-	@printf "Cleaned: %s\n" $(FCLN)
+# Cleans all the subdirectories ready to eval
+ca:
+	for dir in $(FINDALL_DIR); do \
+		$(MAKE) -C "$${dir}" clean; \
+	done
+	rm -rf libs incs *.out
 
-re: clean all
-	@clear
-	@printf "Cleaned and remade all files!\n"
+# Makes all directories in the current folder structure
+ma:
+	mkdir -p libs incs
+	for dir in $(FINDALL_DIR); do \
+		$(MAKE) -C "$${dir}" all; \
+		mv $${dir}/lib**.a libs; \
+		cp $${dir}/includes/*.h incs/${dir}; \
+	done
+
+# Commits to github all current files
+# 	Substitute github-link with a github link to push to github
+github:
+	git remote set-url origin github-link
+	git add .
+	echo "Please type a commit messsage"
+	read COMMIT; \
+	git commit -m "$$COMMIT"; \
+	git push;
+
+# Commits to git located at 42 vogsphere
+#	Substitute 42-vog for your 42 intra project link
+submit:
+	git remote set-url origin 42-vog
+	git add .
+	echo "Please type a commit message"
+	read COMMIT; \
+	git commit -m "$$COMMIT"; \
+	git push
+
+uselib: all
+	gcc tests/ft.c -o ft.out -I inc -L libs -l ft
+	gcc tests/printf.c -o printf.out -I inc -L libs -l ftprintf
+	gcc tests/gnl.c -o gnl.out -I inc -L libs -l gnl
+	gcc tests/per.c -o per.out -I inc -L libs -l per

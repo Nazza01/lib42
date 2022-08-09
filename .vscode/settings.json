@@ -1,7 +1,10 @@
 {
 	"files.associations": {
 		"ft_printf.h": "c",
-		"algorithm": "c"
+		"algorithm": "c",
+		"get_next_line.h": "c",
+		"libft.h": "c",
+		"personal.h": "c"
 	},
 	"makefile.launchConfigurations": [
 		{
