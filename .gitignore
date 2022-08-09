@@ -6,7 +6,7 @@ objects/
 build/
 
 # .vscode files that don't need to be commited and/or are regenerated when starting vscode
-.vscode
+.vscode/
 
 # Prerequisites
 *.d
