@@ -6,7 +6,7 @@
 #    By: Nathanael <nervin@student.42adel.org.au    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/01/25 23:45:33 by Nathanael         #+#    #+#              #
-#    Updated: 2022/08/09 16:22:18 by Nathanael        ###   ########.fr        #
+#    Updated: 2022/08/09 22:01:14 by Nathanael        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,6 +42,26 @@ gnl:
 
 personal:
 	$(MAKE) -C libraries/personal
+
+testft:
+	gcc tests/ft.c -o ft.out -I inc -L libs -l ft
+	leaks -atExit -- ./ft.out
+	rm ft.out
+
+testprf:
+	gcc tests/printf.c -o printf.out -I inc -L libs -l ftprintf
+	leaks -atExit -- ./printf.out
+	rm printf.out
+
+testgnl:
+	gcc tests/gnl.c -o gnl.out -I inc -L libs -l gnl
+	./gnl.out
+	rm gnl.out
+
+testper:
+	gcc tests/per.c -o per.out -I inc -L libs -l per
+	./per.out
+	rm per.out
 
 # Cleans all the subdirectories ready to eval
 ca:
@@ -79,8 +99,5 @@ submit:
 	git commit -m "$$COMMIT"; \
 	git push
 
-uselib: all
-	gcc tests/ft.c -o ft.out -I inc -L libs -l ft
-	gcc tests/printf.c -o printf.out -I inc -L libs -l ftprintf
-	gcc tests/gnl.c -o gnl.out -I inc -L libs -l gnl
-	gcc tests/per.c -o per.out -I inc -L libs -l per
+testalllib: all testft testpr
+	

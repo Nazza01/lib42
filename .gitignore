@@ -6,9 +6,7 @@ objects/
 build/
 
 # .vscode files that don't need to be commited and/or are regenerated when starting vscode
-.vscode/configurationCache
-.vscode/dryrun.log
-.vscode/targets.log
+.vscode
 
 # Prerequisites
 *.d
