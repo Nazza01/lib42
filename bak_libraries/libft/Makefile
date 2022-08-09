@@ -6,7 +6,7 @@
 #    By: Nathanael <nervin@student.42adel.org.au    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/01 20:23:35 by Nathanael         #+#    #+#              #
-#    Updated: 2022/08/09 23:19:12 by Nathanael        ###   ########.fr        #
+#    Updated: 2022/08/09 14:47:07 by Nathanael        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,6 +19,20 @@ COMP_STD	=	-std=c99
 COMP_FLAGS	=	-Wall -Wextra -Werror
 # 																			   #
 ################################################################################
+
+
+################################################################################
+#								Progress Bar								   #
+################################################################################
+ifndef ECHO
+T := $(shell $(MAKE) $(MAKECMDGOALS) --no-print-directory \
+	-nrRf $(firstword $(MAKEFILE_LIST)) \
+	ECHO="COUNTTHIS" | grep -c "COUNTTHIS")
+
+N := x
+C = $(words $N)$(eval N := x $N)
+ECHO = echo "`expr " [\`expr $C '*' 100 / $T\`" : '.*\(....\)$$'`%]"
+endif
 
 ################################################################################
 #								Colours										   #
@@ -54,16 +68,13 @@ C_FIN_VA	=	$(CT_BLU)
 ################################################################################
 #								Directories/Files							   #
 ################################################################################
-SRC_DIR		=	.
-HDR_DIR		=	.
-BUILD_DIR	=	.
+SRC_DIR		=	./sources
+HDR_DIR		=	./includes
+BUILD_DIR	=	./build
 
-SOURCES		=	$(shell find $(SRC_DIR) -name '*.$(SOURCE_EXT)' -not -name '**lst**.$(SOURCE_EXT)')
+SOURCES		=	$(shell find $(SRC_DIR) -name '*.$(SOURCE_EXT)')
 OBJECTS		=	$(SOURCES:$(SRC_DIR)/%.$(SOURCE_EXT)=$(BUILD_DIR)/%.o)
 DEPS		=	$(OBJECTS:.o=.d)
-
-BONUS		=	$(shell find $(SRC_DIR) -name '**lst**_bonus.$(SOURCE_EXT)')
-B_OBJ		=	$(BONUS:$(SRC_DIR)/%.$(SOURCE_EXT)=$(BUILD_DIR)/%.o)
 
 LOG			=	$(shell find . -name '*.log')
 ################################################################################
@@ -74,13 +85,15 @@ LDFLAGS		+=
 INCLUDES	=	-I $(HDR_DIR)
 
 CLEAN_LST	=	$(NAME) $(LOG)
-FCLN_LST	=	*.o
+FCLN_LST	=	$(BUILD_DIR) $(LOG)
 
 RM			=	rm -rf
 MKDIR		=	mkdir -p
 AR			=	ar -rcs
-ECHO		=	echo
 
+BUILD_RULE	:=	$(AR)
+CLEAN_RULE	:=	$(RM)
+LINK_RULE	:=	$(COMPILER) $(CFLAGS) $(INCLUDES) -c -o
 ################################################################################
 #								Make Rules									   #
 ################################################################################
@@ -93,26 +106,23 @@ all: $(NAME)
 $(NAME): $(OBJECTS)
 	$(ECHO) "${C_BLD_MS}    Building    ${CAL_RST}	${C_BLD_VA}$@${CAL_RST}"
 	$(MKDIR) $(BUILD_DIR)
-	$(AR) $(NAME) $^ $@
+	$(BUILD_RULE) $@ $^
 
-bonus: $(B_OBJ)
-	$(AR) $(NAME) $^
-
-clean:
+c clean fclean:
 	$(ECHO) "${C_CLN_MS}    Cleaning    ${CAL_RST}	${C_CLN_VA}$(CLEAN_LST)${CAL_RST}"
 	$(ECHO) "${C_CLN_MS}    Cleaning    ${CAL_RST}	${C_CLN_VA}$(FCLN_LST)${CAL_RST}"
-	$(RM) $(CLEAN_LST) $(FCLN_LST)
+	$(CLEAN_RULE) $(CLEAN_LST) $(FCLN_LST)
 
-fclean:
+cc:
 	clear
 	$(ECHO) "${C_CLN_MS} Screen Cleared ${CAL_RST}"
-	$(MAKE) clean
+	$(MAKE) c
 
-re: clean all
+r: c all
 
 -include $(DEPS)
 
-%.o : %.$(SOURCE_EXT)
+$(BUILD_DIR)/%.o : $(SRC_DIR)/%.$(SOURCE_EXT)
 	$(ECHO) "${C_LNK_MS}    Linking     ${CAL_RST}	${C_LNK_V1}$< ${CAL_RST}${CT_WHT}to ${CAL_RST}${C_LNK_V2}$@ ${CAL_RST}"
 	$(MKDIR) $(@D)
-	$(COMPILER) $(CFLAGS) $(INCLUDES) -c -o $@ $<
+	$(LINK_RULE) $@ $<
